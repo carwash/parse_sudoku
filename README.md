@@ -45,6 +45,8 @@ This module contains DCG predicates to read in files with such a format and map 
 
 - Apply `sudokus//1` to a file or stream to get a list of puzzles:
 `phrase_from_file(sudokus(-Puzzles), +File)`
+- Or use `parse_sudokus/2`:
+`parse_sudokus(+File, -Puzzles)`
 - Use the convenience predicate `solve_all/1` on such a list to solve them using the CLP(FD) implementation if loaded, or `solve_all_from_file/1` to solve directly from a file:
 `solve_all(+List_of_Puzzles)`
 `solve_all_from_file(+File)`
